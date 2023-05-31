@@ -10,7 +10,7 @@ const options = {
   rejectUnauthorized: false
 };
 
-app.get('/akotv', (req, res) => {
+app.get('/belive', (req, res) => {
   const s = req.query.s || 'default value';
   https.get('https://config.e-droid.net/srv/config.php?v=142&vname=2.0&idapp=2174667&idusu=0&cod_g=&gp=0&am=0&idl=en&pa_env=1&pa=US&pn=com.chacha2022&fus=010100000000&aid=a5417094071fea1a', options, (response) => {
     let data = '';
